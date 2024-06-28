@@ -27,15 +27,8 @@ export const priviteRoutes = [
       path:"/",
       element:<Home/>,
       icon:<i className="bi bi-house-door-fill"></i>,
+      name:"Home"
     },
-    {
-        key:1,
-        roles:["admin","user"],
-        path:"/home",
-        element:<Home/>,
-        icon:<i className="bi bi-house-door-fill"></i>,
-        name:"Home"
-      },
     {
         key:2,
         roles:["admin","user"],

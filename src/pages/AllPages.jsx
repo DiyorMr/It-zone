@@ -17,7 +17,7 @@ export default function AllPages() {
 
                 <Route path='/' element={<ProtectedRoutes isLoged={user.isLoged} />}>
                     {
-                        priviteRoutes.map(item => <Route key={item.key} path={item.path}
+                        priviteRoutes.map(item => <Route index key={item.key} path={item.path}
                             element={<CheckRole userRole={userData.role} roles={item.roles} >
                                 {item.element}
                             </CheckRole>} />)
