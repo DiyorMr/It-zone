@@ -80,8 +80,9 @@ export default function Home() {
                 </div>
                 <div className="home-info-col-right">
                   <p>
-                    Total Students {student}
+                    Students
                   </p>
+                  <p className="total">Total: {student}</p>
                 </div>
               </Link>
             </div>
@@ -92,8 +93,9 @@ export default function Home() {
                 </div>
                 <div className="home-info-col-right">
                   <p>
-                    New Groups {group}
+                    New Groups
                   </p>
+                  <p className="total">Total: {group}</p>
                 </div>
               </Link>
             </div>
@@ -104,20 +106,22 @@ export default function Home() {
                 </div>
                 <div className="home-info-col-right">
                   <p>
-                    All Courses {course}
+                    All Courses
                   </p>
+                  <p className="total">Total: {course}</p>
                 </div>
               </Link>
             </div>
             <div className="home-info-col">
               <Link to={"/teacher"} className="home-info-col-content">
-              <div className="home-info-col-left">
+                <div className="home-info-col-left">
                   <i className="bi bi-currency-dollar"></i>
                 </div>
                 <div className="home-info-col-right">
                   <p>
-                    All Teachers {teacher}
+                    All Teachers
                   </p>
+                  <p className="total">Total: {teacher}</p>
                 </div>
               </Link>
             </div>
